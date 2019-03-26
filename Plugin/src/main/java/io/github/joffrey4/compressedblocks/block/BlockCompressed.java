@@ -78,7 +78,7 @@ public class BlockCompressed {
         // Get the skull metadata and initialize a texture profile
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
         GameProfile profile = new GameProfile(UUID.fromString("069a79f4-44e9-4726-a5be-fca90e38aaf5"), null);
-        profile.getProperties().put("textures", new Property("textures", Base64Coder.encodeString("{textures:{SKIN:{url:"" + skinURL + ""}}}")));
+        profile.getProperties().put("textures", new Property("textures", Base64Coder.encodeString("{textures:{SKIN:{url:\"" + skinURL + "\"}}}")));
         profile.getProperties().put("compBlocksName", new Property("compBlocksName", name));
 
         // Set the texture profile to the skull metadata
