@@ -41,7 +41,8 @@ public class Main extends JavaPlugin {
 
 // This block was modified by @cindyker for The Minecats community, implimented by @AeSix
 // original cause for non-operation was invalid item names in the config. 
-            Map<Material, Map<String, String>> blocksConfig = new HaskMap<>();
+//            Map<Material, Map<String, String>> blocksConfig = new HaskMap<>();
+            blocksConfig = new HaskMap<>();
             this.getLogger().info(compressibleConfig.toString());
             for (Map.Entry<String, Object> entry : compressibleConfig.getValues(false).entrySet()) {
                 Material material = Material.valueOf(entry.getKey());
