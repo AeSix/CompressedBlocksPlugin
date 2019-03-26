@@ -64,8 +64,8 @@ public class BlockCompressed {
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD, 1);
 
         ////TRY ADDING THESE LINES.  if this fixes it, you can remove the log line. It will probably be spammy. 
-         config = plugin.getConfig();
-         plugin.getLogger().info("getItemStack of : " + name );
+//         config = plugin.getConfig();
+//         plugin.getLogger().info("getItemStack of : " + name );
         /////////////////
 
         String skinURL = "http://textures.minecraft.net/texture/";
