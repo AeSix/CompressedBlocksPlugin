@@ -23,9 +23,11 @@ public class BlockCompressed {
     private static String name;
     private static String typeName;
     private static FileConfiguration config;
+    private static Main plugin;
 
     public BlockCompressed(Material material, String typeName, Main plugin) {
         BlockCompressed.config = plugin.getConfig();
+        this.plugin = plugin;
         BlockCompressed.material = material;
 
         // Internal name of the compressed block (ex: oakwood)
@@ -64,8 +66,8 @@ public class BlockCompressed {
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD, 1);
 
         ////TRY ADDING THESE LINES.  if this fixes it, you can remove the log line. It will probably be spammy. 
-//         config = plugin.getConfig();
-//         plugin.getLogger().info("getItemStack of : " + name );
+         config = plugin.getConfig();
+         plugin.getLogger().info("getItemStack of : " + name );
         /////////////////
 
         String skinURL = "http://textures.minecraft.net/texture/";
